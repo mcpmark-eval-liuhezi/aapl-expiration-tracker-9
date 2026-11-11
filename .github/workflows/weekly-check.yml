@@ -1,0 +1,11 @@
+name: Tracker Weekly Check
+
+on:
+  workflow_dispatch:
+
+jobs:
+  weekly-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo weekly tracker summary
+        run: echo "AAPL options weekly expiration tracker — range 2026-11-11 to 2026-11-16, current price $348.51"
